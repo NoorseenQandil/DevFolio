@@ -1,0 +1,769 @@
+*{
+    list-style-type: none;
+}
+:root{
+    --main-color:#0078ff;
+    --white-color:white;
+}
+h2{
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+.title{
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 3.75rem;
+}
+.title p{
+    margin: auto;
+    width: 80%;
+}
+.title::after{
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3125rem;
+    background-color: var(--main-color);
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.911);
+}
+nav h1{
+    font-size: 1.8125rem;
+}
+.navbar-toggler-icon{
+    background-image: none;
+    color: var(--white-color);
+}
+nav li{
+    padding: 0.625rem 0rem 0rem 1.875rem !important;
+}
+nav ul a{
+    position: relative;
+    padding: 0rem 0rem 0.625rem 0rem !important;
+    overflow: hidden;
+}
+nav ul a::before{
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: -100%;
+    width: 80%;
+    height: 0.1875rem;
+    background-color: #fff;
+    transition: 0.5s left;
+}
+.navbar-nav .nav-link.active::before,
+.navbar-nav .nav-link.show,
+nav a:hover::before{
+    left: 0rem;
+}
+.nav-item .nav-link{
+    color: #FFFFFF;
+}
+#DeepMenu {
+    display: none;
+  }
+  
+.dropdown-menu span {
+    position: relative;
+  }
+  
+.dropdown-menu a:hover + #DeepMenu
+  {
+    display: block;
+    position: absolute;
+    background-color: var(--white-color);
+    width: 100%;
+    border-radius: 0.3125rem;
+  }
+
+/************ Home **************/
+#home{
+    background-image: url("../images/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--white-color);
+}
+#home .overlay{
+    background-color: #00000091;
+    width: 100%;
+    height: 100%;
+}
+#home .descrption h2{
+    font-size: 4.375rem;
+    font-weight: 600;
+}
+#home .descrption span{
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: Animation-Color;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#home .descrption span::before{
+    content: "";
+    color: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation-name: retyping-annimation;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes retyping-annimation{
+    0% {
+        content: "";
+    }
+    1% {
+        content: "D";
+    }
+    2% {
+        content: "De";
+    }
+    3% {
+        content: "Des";
+    }
+    4% {
+        content: "Desi";
+    }
+    5%{
+        content: "Desig";
+    }
+    6%{
+        content: "Design";
+    }
+    7% {
+        content: "Designe";
+    }
+    8% {
+        content: "Designer";
+    }
+    9% {
+        content: "Designer";
+    }
+    10%{
+            content: "Designer";
+        }
+    11%{
+        content: "Designer";
+        }
+    12%{
+        content: "Designer";
+    }    
+    14%{
+        content: "Designer";
+    }
+    15%{
+        content: "Designe";
+    }
+    16%{
+        content: "Design";
+    }
+    17%{
+        content: "Desig";
+    }
+    18%{
+        content: "Desi";
+    }
+    19%{
+        content: "Des";
+    }
+    20%{
+        content: "De";
+    }
+    21% {
+        content: "Dev";
+    }
+    22% {
+        content: "Devo";
+    }
+    23% {
+        content: "Devol";
+    }
+    24% {
+        content: "Devole";
+    }
+    25% {
+        content: "Devolep";
+    }
+    26% {
+        content: "Devolepe";
+    }
+    27% {
+        content: "Devoleper";
+    }
+    28% {
+        content: "Devoleper";
+    }
+    29% {
+        content: "Devoleper";
+    }
+    30% {
+        content: "Devoleper";
+    }
+    31% {
+        content: "Devoleper";
+    }
+    32% {
+        content: "Devoleper";
+    }
+    33% {
+        content: "Devoleper";
+    }
+    34% {
+        content: "Devolepe";
+    }
+    35% {
+        content: "Devolep";
+    }
+    36% {
+        content: "Devole";
+    }
+    37% {
+        content: "Devol";
+    }
+    38% {
+        content: "Devo";
+    }
+    39% {
+        content: "Dev";
+    }
+    40% {
+        content: "De";
+    }
+    41% {
+        content: "D";
+    }
+    42% {
+        content: "";
+    }
+    43% {
+        content: "F";
+    }
+    44% {
+        content: "Fr";
+    }
+    45% {
+        content: "Fre";
+    }
+    46% {
+        content: "Free";
+    }
+    47% {
+        content: "Freel";
+    }
+    48% {
+        content: "Freela";
+    }
+    49% {
+        content: "Freelan";
+    }
+    50% {
+        content: "Freelanc";
+    }
+    51% {
+        content: "Freelance";
+    }
+    52% {
+        content: "Freelancer";
+    }
+    53% {
+        content: "Freelancer";
+    }
+    54% {
+        content: "Freelancer";
+    }
+    55% {
+        content: "Freelancer";
+    }
+    56% {
+        content: "Freelancer";
+    }
+    57% {
+        content: "Freelancer";
+    }
+    58% {
+        content: "Freelancer";
+    }
+    61% {
+        content: "Freelance";
+    }
+    62% {
+        content: "Freelanc";
+    }
+    63% {
+        content: "Freelan";
+    }
+    64% {
+        content: "Freela";
+    }
+    65% {
+        content: "Freel";
+    }
+    66% {
+        content: "Free";
+    }
+    67% {
+        content: "Fre";
+    }
+    68% {
+        content: "Fr";
+    }
+    69% {
+        content: "F";
+    }
+    70% {
+        content: "";
+    }
+    71% {
+        content: "P";
+    }
+    72% {
+        content: "Ph";
+    }
+    73% {
+        content: "Pho";
+    }
+    74% {
+        content: "Phot";
+    }
+    75% {
+        content: "Photo";
+    }
+    76% {
+        content: "Photog";
+    }
+    77% {
+        content: "Photogr";
+    }
+    78% {
+        content: "Photogra";
+    }
+    79% {
+        content: "Photograp";
+    }
+    80% {
+        content: "Photograph";
+    }
+    81% {
+        content: "Photographe";
+    }
+    82% {
+        content: "Photographer";
+    }
+    83% {
+        content: "Photographer";
+    }
+    84% {
+        content: "Photographer";
+    }
+    85% {
+        content: "Photographer";
+    }
+    86% {
+        content: "Photographer";
+    }
+    87% {
+        content: "Photographer";
+    }
+    88% {
+        content: "Photographer";
+    }
+    89% {
+        content: "Photographe";
+    }
+    90% {
+        content: "Photograph";
+    }
+    91% {
+        content: "Photograp";
+    }
+    92% {
+        content: "Photogra";
+    }
+    93% {
+        content: "Photogr";
+    }
+    94% {
+        content: "Photog";
+    }
+    95% {
+        content: "Photo";
+    }
+    96% {
+        content: "Phot";
+    }
+    97% {
+        content: "Pho";
+    }
+    98% {
+        content: "Ph";
+    }
+    99% {
+        content: "P";
+    }
+    100% {
+        content: "";
+    }
+    }
+
+@keyframes Animation-Color{
+    0% {
+        color: #fff;
+    }
+    8% {
+        color: #fff;
+    }
+    11% {
+        color: #ffffff00;
+    }
+    14% {
+        color: #fff;
+    }
+    27% {
+        color: #fff;
+    }
+    30% {
+        color: #ffffff00;
+    }
+    33% {
+        color: #fff;
+    }
+    52% {
+        color: #fff;
+    }
+    55% {
+        color: #ffffff00;
+    }
+    58% {
+        color: #fff;
+    }
+    82% {
+        color: #fff;
+    }
+    85% {
+        color: #ffffff00;
+    }
+    88% {
+        color: #fff;
+    }
+}
+
+/********* About ****************/
+#about img{
+    margin-left: 0.625rem;
+    max-width: 100%;
+}
+#about .info{
+    padding: 0;
+} 
+#about .info li{
+    padding-block: 0.625rem;
+}
+#about .info span{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+#about .skills > span{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+#about .progress{
+    border-radius: 0;
+    height: 0.625rem;
+    background-color: #c4e1fc;
+}
+#about h3{
+    display: inline-block;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 0.625rem;
+    margin-bottom: 3.125rem;
+}
+#about h3::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 70%;
+    height: 0.1875rem;
+    background-color: var(--main-color);
+}
+#about p{
+    color: gray;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+/********************* Services *********************/
+#services .icon{
+    width: 7.5rem;
+    height: 7.5rem;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline:auto;
+    margin-bottom: 1.25rem;
+    border:0.625rem solid var(--main-color);
+    transition: 0.5s background-color, 0.5s color, 0.5s border;
+}
+#services .card{
+    border: 0;
+}
+.services:hover .icon{
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border: 0.625rem solid #add3ff !important;
+}
+
+/************ Count UP *******************/
+#countUp{
+    background-image: url('../images/post-3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+#countUp .layout{
+    padding-block: 9.375rem;
+    background-color: #0078ffa9;
+}
+#countUp .item i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline:auto;
+    width: 5rem;
+    height: 5rem;
+    border:0.625rem solid;
+}
+
+/********** Portfolio *********************/
+#portfolio .card{
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+#portfolio .card h5{
+    font-size: 1.1875rem;
+}
+#portfolio .card img{
+    border-radius: 0 !important;
+    transition: 1s transform;
+}
+#portfolio .card .img-container{
+    overflow: hidden;
+    cursor: pointer;
+}
+#portfolio .card:hover img{
+    transform: scale(1.2);
+}
+#portfolio .card .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#portfolio .card a{
+    margin-top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--main-color);
+    border: 0.1875rem solid var(--main-color);
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-align: center;
+}
+#portfolio .card  span{
+    font-size: 0.875rem;
+}
+#portfolio .card  span{
+    color: gray;
+}
+
+/************* Testimonials ***********************/
+#testimonials{
+    background-image: url('../images/overlay-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#testimonials .overlay{
+    background-color: #0078ffb2;
+    padding-block: 10rem;
+}
+#testimonials .carousel-caption{
+    position: static;
+}
+#testimonials .img-container{
+    width: 9.375rem;
+    height: 9.375rem;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#testimonials .carousel-indicators [data-bs-target]{
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border-radius: 50%;
+}
+#testimonials .carousel-caption p{
+    line-height: 1.875rem;
+    font-size: 1.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+#testimonials .carousel-indicators{
+    position: static;
+}
+
+/****************** Blog ***************************/
+#blog .img-container{
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.625rem;
+}
+#blog .img-container img{
+    width: 100%;
+}
+#blog .btn-shape{
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.3125rem 0.75rem;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+}
+#blog .card-body{
+    padding-top: 1.875rem !important;
+}
+
+/******************** Contact US *************************/
+#contactUs{
+    background-image: url('../images/overlay-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contactUs .overlay{
+    background-color: #0077ffb2;
+    padding-block: 10rem;
+}
+#contactUs .title{
+    margin-bottom: 1.875rem;
+}
+#contactUs .title h3{
+    margin: 0; 
+    font-size: 2rem;
+}
+#contactUs .title::after{
+    left: 0;
+    transform: translate(0);
+    width: 100px;
+    height: 0.1875rem;
+}
+#contactUs input,
+#contactUs textarea{
+    border-radius: 0;
+    font-size: 0.875rem;
+    padding: 0.625rem;
+}
+#contactUs button{
+    display: block !important;
+    margin-inline: auto;
+    padding: 0.625rem 1.5rem;
+    font-size: 1.125rem;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border: 0;
+    transition: 0s
+}
+#contactUs button:hover{
+    background-color: #3393ff;
+    box-shadow: #dad8d8;
+    border: 0.1875rem solid #add3ff !important;
+    transform: scale(1);
+}
+#contactUs p{
+    color: gray;
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.875rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contactUs ul{
+    padding: 0;
+}
+#contactUs .contact-info li{
+    padding-bottom: 0.9375rem;
+}
+#contactUs .contact-info i{
+    color: var(--main-color);
+    margin-right: 0.625rem;
+}
+#contactUs .socila-media a{
+    color: #000 !important;
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: 1.125rem;
+    margin-right: 10px;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1875rem solid var(--main-color);
+    transition: 1s;
+}
+#contactUs .socila-media a:hover{
+    color:#fff !important;
+    transform: scale(0.9);
+    border: 0.1875rem solid #add3ff !important;
+}
+
+/************* Footer Properities ****************************/
+#footer{
+    background-color: #0062d3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*********** Media Query ****************************/
+@media (max-width: 575px){
+    #home .descrption h2{
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+    #home .descrption span{
+        font-size: 1.5625rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    #home .descrption h2{
+        width: 70%;
+        margin: auto;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    #home .descrption span{
+        font-size: 2.1875rem;
+    }
+}
